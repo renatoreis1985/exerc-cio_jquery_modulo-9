@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicione uma ou mais tarefas</h2>
+        </section>
+        <section>
+            <form>
+                <div class="inputs-group">
+                    <input class="inputs" id="tarefa" type="text" required placeholder="Adicione a tarefa">
+                    <label class="inputs" for="data-tarefa"></label><h3>Horário:</h3></label>
+                    <input class="inputs" id="data-tarefa" type="time">
+                </div>
+                <div class="button-group">
+                    <button class="botoes" id="confirma" type="submit">Adicionar</button>
+                    <button class="botoes" id="reseta" type="reset">Limpar Tudo</button>
+                </div>
+            </form>
+        </section>
+        <section class="lista">
+            <h3>Tarefas pendentes</h3>
+            <ul id="lista-tarefas">
+                <li>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; Renato Pinheiro dos Reis 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

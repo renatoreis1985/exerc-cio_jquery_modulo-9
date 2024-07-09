@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 185, 119);
+    padding: 16px 0;
+    justify-content: center;
+    color: #000000;
+    border-bottom: 8px solid rgb(255, 123, 0);
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(255, 123, 0);
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    border-top: 8px solid rgb(255, 185, 119);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section h2 {
+    margin: 16px 0;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#confirma, #reseta {
+    color: #fff;
+    border: none;
+    padding: 12px 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+#confirma {
+    background-color: rgb(0, 44, 138);
+    max-width: 100%;
+    width: 147px;
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+#confirma:hover {
+    transform: scale(0.99);
+    transition: all 300ms;
+}
+
+#reseta {
+    background-color: red;
+    max-width: 100%;
+    width: 147px;
+    cursor: pointer;
+}
+
+#reseta:hover {
+    transform: scale(0.99);
+    transition: all 300ms;
+}
+
+#data-tarefa, #tarefa {
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+#tarefa {
+    width: 300px;
+}
+
+#data-tarefa {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Modificando a lista ul, li */
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    width: 350px;
+    margin: 36px 0;
+    border: none; 
+    color: black;
+    background-color: #fdaf7b;
+    font-size: large;
+    visibility: hidden;
+}
+
+#lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    width: 100%;
+    color: black;
+    background-color: #ffffff;
+    border: none; 
+    overflow-y: auto; /* Adiciona rolagem vertical */
+} /* Inicialmente sem borda */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    font-weight: 600;
+}
+
+ul li span.checked {
+    text-decoration: line-through;
+}
+
+.verificar {
+    background-color: rgb(0, 44, 138);
+    border: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.limpar {
+    background-color: red;
+    border: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.verificar, .limpar {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.verificar:hover {
+    transform: scale(0.98);
+    transition: all 300ms;
+}
+
+.limpar:hover {
+    transform: scale(0.98);
+    transition: all 300ms;
+}
+
+section h3 {
+    margin: 8px 0;
+}
